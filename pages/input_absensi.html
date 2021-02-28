@@ -1,0 +1,37 @@
+<div class="page" data-name="input_absensi">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="titleMasterKunjungan">Input Absensi</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <input type="hidden" id="jenisInputAbsensi" value="">
+        <input type="hidden" id="idInputAbsensi" value="">
+        <div class="block">
+
+            <span class="spanFoto">
+                <div class="card">
+                    <div class="card-header row" style="background-color:#2196F3;color:white">
+                        <a href="#" onClick="ambilFoto('1','tidak')" class="ambilFoto col padding5">
+                            <i class="fa fa-camera  middleWhite"> </i>
+                        </a>
+                    </div>
+                    <div class="card-content card-content-padding">
+                        <img id="foto-1" name="fotoUpload" class="1" height="150" width="100%" >
+                    </div>
+                </div>
+            </span>
+
+            <p class="row">
+                <button class="col-50 button button-large button-fill color-green" onClick="InputAbsensi('LOGIN')">Absen Masuk</button>
+                <button class="col-50 button button-large button-fill color-red" onClick="InputAbsensi('LOGOUT')">Absen Pulang</button>
+            </p>
+        </div>
+
+    </div>

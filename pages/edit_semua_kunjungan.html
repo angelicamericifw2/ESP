@@ -1,0 +1,153 @@
+<div class="page" data-name="edit_semua_kunjungan" >
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title">Edit Kunjungan</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="list form-store-data" >
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3;font-weight: bold">* Permintaan Khusus</div>
+                    <div class="item-input-wrap">
+                        <select class="editPermintaanKhususKunjungan">
+                                <!-- <option value="JAKARTA" selected>JAKARTA</option>
+                                <option value="BALI" >BALI</option>
+                                <option value="MAKASSAR">MAKASSAR</option>
+                                <option value="SOLO">SOLO</option>
+                                <option value="SURABAYA">SURABAYA</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-content item-input" >
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Keterangan</div>
+                        <div class="item-input-wrap">
+                            <textarea class="editKeteranganKunjungan"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-content item-input" >
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Kesimpulan</div>
+                        <div class="item-input-wrap">
+                            <textarea class="editKesimpulanKunjungan"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="spanFotoSemuaKunjunganAda">
+                    <div class="card">
+                        <div class="card-header row" style="background-color:#2196F3;color:white">
+                            <div class="col padding5">
+                                <a href="#" onClick="ambilFotoKunjungan('1')" class="ambilFotoKunjungan">
+                                    <a href="#" class="hapusFotoKunjungan col-50 padding5" id ="${counter}">
+                                        <i class="fas fa-window-close  middleWhite" ></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-content card-content-padding">
+                                <img id="foto-kunjungan-1" name="fotoKunjunganUpload" class="1" height="150" width="100%">
+                            </div>
+                        </div>
+                    </span>
+
+
+
+                    <span class="spanFotoKunjungan">
+                    <!-- <div class="card">
+                        <div class="card-header row" style="background-color:#2196F3;color:white">
+                            <div class="col padding5">
+                                <a href="#" onClick="ambilFotoKunjungan('1')" class="ambilFotoKunjungan">
+                                    <i class="fa fa-camera  middleWhite"> FOTO</i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-content card-content-padding">
+                            <img id="foto-kunjungan-1" name="fotoKunjunganUpload" class="1" height="150" width="100%">
+                        </div>
+                    </div> -->
+                </span>
+            </div>
+
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnEditSemuaKunjungan">Edit</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup popup-toko" style="background-color:white" data-ajax="false">
+            <form class="searchbar">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search">
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+
+            </form>
+            <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+            <div class="searchbar-backdrop"></div>
+            <!-- hide-on-search element -->
+
+            <!-- search target list -->
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnCancel">Cancel</button>
+                </div>
+            </div>
+            <div class="list inset searchbar-found">
+                <ul class="listPopupNamaTokoRencanaKunjungan">
+                <!-- <li>
+                    <a href="#" class="item-link item-content cobaKlik" onClick="pilihToko('21','Makmur Jaya')">
+                        <div class="item-inner">
+                            <div class="item-text namaToko" style="color:black">Makmur Jaya</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="item-link item-content" onClick="pilihToko('24','Lancar Jaya')">
+                        <div class="item-inner">
+                            <div class="item-text namaToko" style="color:black">Lancar Jaya</div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="item-link item-content" onClick="pilihToko('23','Sumber Berkat')">
+                        <div class="item-inner">
+                            <div class="item-text namaToko" style="color:black">Sumber Berkat</div>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>

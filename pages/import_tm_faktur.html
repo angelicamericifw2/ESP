@@ -1,0 +1,58 @@
+<div class="page" data-name="import_tm_faktur">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">Import TM Faktur</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="row marginTopTablet">
+      <div class="card card-outline col-100 tablet-80 desktop-60 align-self-center" style="margin:0 auto;">
+        <div class="card-content col-100 tablet-80 desktop-60 align-self-center" style="margin:0 auto;">
+
+          <div class="list inline-labels no-hairlines-md padding-bottom padding-top padding-left padding-right fontIndieFlower">
+
+            <div class="row ">
+              <div class="col-45 tablet-30 desktop-30">Pilih File Excel</div>
+              <div class="col-50 tablet-65 desktop-65" id="detailMenuNama">
+                <input type="file" onchange="loadFile(event)" class="fileExcel" accept=" application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"></div>
+              </div>
+
+                    <!-- <div class="list">
+                      <ul>
+                        <li>
+                          <label class="item-radio item-content">
+                            <input type="radio" name="demo-radio" class="radioButtonMbrg" value="stokBarang" checked />
+                            <i class="icon icon-radio"></i>
+                            <div class="item-inner">
+                              <div class="item-title">Stok Saja</div>
+                          </div>
+                      </label>
+                  </li>
+                  <li>
+                      <label class="item-radio item-content">
+                        <input type="radio" name="demo-radio" class="radioButtonMbrg" value="semuaBarang"/>
+                        <i class="icon icon-radio"></i>
+                        <div class="item-inner">
+                          <div class="item-title">Semua Barang</div>
+                      </div>
+                  </label>
+              </li>
+          </ul>
+        </div> -->
+
+        <div class="col-100 display-flex align-items-center justify-content-center margin-bottom margin-top">
+          <button style="width:250px" class="button button-big button-fill popup-close bold" onClick="ImportTmFaktur(this)">Import</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>

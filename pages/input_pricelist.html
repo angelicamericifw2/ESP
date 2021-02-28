@@ -1,0 +1,253 @@
+<div class="page" data-name="input_pricelist">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title">Masukkan Pricelist</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="list form-store-data" >
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Kategori Barang</b></div>
+                    <div class="item-input-wrap">  
+                        <a href="#" class="popup-open-kategoriBarang" >
+                            <input type="text" class="inputNamaPalsuKategoriBarangPricelist" placeholder="" readonly="readonly"/>
+                            <input type="hidden" class="inputKategoriBarangPricelist" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Kode Barang</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" class="inputKodeBarangPricelist" placeholder="Kode">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Nama</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" class="inputNamaPricelistBarang" placeholder="Nama">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Satuan</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" class="inputSatuanPricelist" placeholder="Satuan">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Harga Tempo</b></div>
+                    <div class="item-input-wrap">
+                        <input type="number" class="inputHargaTempoPricelist" placeholder="Harga Tempo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Harga Cash</b></div>
+                    <div class="item-input-wrap">
+                        <input type="number" class="inputHargaCashPricelist" placeholder="Harga Cash">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Harga Pricelist</b></div>
+                    <div class="item-input-wrap">
+                        <input type="number" class="inputHargaPricelistPricelist" placeholder="Harga Pricelist">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Keterangan</b></div>
+                    <div class="item-input-wrap">
+                        <textarea class="inputKeteranganPricelist" placeholder="Keterangan"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="block block-strong">
+                <button class="col button button-fill color-red popup-open-merkMobil">Pilih Merk Mobil</button>
+                <span class="cardMerkMobil"> 
+                    <!-- <div class="card">
+                        <div class ="card-header cardHeaderBiru">Data Merk Mobil</div>
+                        <div class="card-content card-content-padding">
+
+
+                            <div class="list ">
+                                <ul class="listMerkMobil">
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Avana</div>
+                                                <div class="item-after"><span class="badge color-blue">1</span></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                </span>
+            </div>
+
+
+
+
+            <div class="generateFotoPricelist">
+                <div class="card">
+                    <div class="card-header row" style="background-color:#2196F3;color:white">
+                        <a href="#" onClick="ambilFotoKameraPricelist(this,'1')" class="ambilFotoToko-1 col-50 padding5" >
+                            <i class="fa fa-camera  middleWhite"></i>        
+                        </a>
+                        <a href="#" onClick="ambilFotoGalleryPricelist(this,'1')" class="col-50 padding5">
+                            <i class="far fa-image  middleWhite" ></i>
+                        </a>
+                    </div>
+
+                    <div class="card-content card-content-padding">
+                        <img  name ="fotoTokoPricelist" class="1" id="foto-pricelist-1" height="150" width="100%">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="block">
+            <div class="row">
+                <button class="col-50 button button-fill btnSimpanInputPricelist">Simpan</button>
+
+                <button class="col-50 button button-fill btnBatalInputPricelist">Batal</button>
+            </div>
+        </div>
+
+
+
+        <div class="popup popup-kategoriBarang" style="background-color:white" data-ajax="false">
+            <form class="searchbar searchKategoriBarang">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search">
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+
+            </form>
+            <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+            <div class="searchbar-backdrop"></div>
+            <!-- hide-on-search element -->
+
+            <!-- search target list -->
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnCancel">Cancel</button>
+                </div>
+            </div>
+            <div class="list inset searchbar-found">
+                <ul class="popupSemuaKategoriBarang">
+                <!-- <li>
+                    <a href="#" class="item-link item-content cobaKlik" onClick="pilihSales('Andy')">
+                        <div class="item-inner">
+                            <div class="item-text namaToko" style="color:black">Andy</div>
+                        </div>
+                    </a>
+                </li> -->
+
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-merkmobil" style="background-color:white" data-ajax="false">
+    <form class="searchbar searchMerkMobil">
+        <div class="searchbar-inner">
+            <div class="searchbar-input-wrap">
+                <input type="search" placeholder="Search">
+                <i class="searchbar-icon"></i>
+                <span class="input-clear-button"></span>
+            </div>
+            <span class="searchbar-disable-button">Cancel</span>
+        </div>
+
+
+
+    </form>
+    <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+    <div class="searchbar-backdrop"></div>
+    <div class="block">
+        <div class="row">
+            <button class="col button button-fill btnCancel">Cancel</button>
+        </div>
+    </div>
+    <div class="list inset searchbar-found">
+        <ul class="listPopupMerkMobil">
+            <!-- <li>
+                <label class="item-checkbox item-content">
+                    <input type="checkbox" name="checked-merkMobil" value="Avanza"/>
+                    <i class="icon icon-checkbox"></i>
+                    <div class="item-inner">
+                      <div class="item-title">Avanza</div>
+                  </div>
+              </label>
+          </li> -->
+
+
+
+      </ul>
+
+  </div>
+
+  <div class="block searchbar-not-found">
+    <div class="block-inner">Nothing found</div>
+</div>
+
+<div class="block">
+    <div class="row">
+        <button class="col-50 button button-fill open-confirm pilihPopUpMerkMobil">PILIH</button>
+
+        <button class="col-50 button button-fill open-confirm batalPopUp" onClick="BatalPopup('.popup-merkmobil')">BATAL</button>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+

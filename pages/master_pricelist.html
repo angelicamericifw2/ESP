@@ -1,0 +1,138 @@
+<div class="page" data-name="master_pricelist">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <!-- <a href="/home/" class="link"> -->
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title titleMasterPelanggan">Master Pricelist </div>
+
+        <!-- <div class="right" onClick="ExportPricelist()">
+          <a class="link">
+            Export
+          </a>
+        </div> -->
+        <div class="right" >
+          <a class="link dynamic-popup" href="#" onClick="OpenPopUp('popup-pilih-file-excel')">
+            Export
+          </a>
+        </div>
+      </div>
+    </div>
+    <form data-search-container=".virtual-list" data-search-item="li" data-search-in=".item-title" class="searchbar searchbar-init">
+      <div class="searchbar-inner">
+        <div class="searchbar-input-wrap">
+          <input type="search" placeholder="Search"/>
+          <i class="searchbar-icon"></i>
+          <span class="input-clear-button"></span>
+        </div>
+        <span class="searchbar-disable-button">Cancel</span>
+      </div>
+    </form>
+    <div class="page-content  infinite-scroll-content">
+
+      <div class="list simple-list searchbar-not-found">
+        <ul>
+          <li>Nothing found</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-100 margin-top margin-bottom margin-right" style="text-align: right">
+          <span  >Waktu Ubah Stok : </span><span id="waktuUbahStokMbrg">-</span>
+        </div>
+
+        <div class="col-100 margin-top margin-bottom margin-right" style="text-align: right">
+          <span  >Waktu Ubah Semua : </span><span  id="waktuUbahSemuaMbrg"=>-</span>
+        </div>
+      </div>
+
+      <div class="list virtual-list media-list searchbar-found"></div>
+
+
+
+    </div>
+
+
+   <!--  <div class="page-content">
+        <div class="searchbar searchMasterPelanggan">
+            <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="Search">
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+            </div>
+        </div>
+        <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+        <div class="searchbar-backdrop"></div>
+        <div class="list media-list searchbar-found semuaMasterPricelist">
+           
+
+
+    </div>
+    <div class="block searchbar-not-found">
+        <div class="block-inner">Nothing found</div>
+    </div>
+
+    
+  </div> -->
+  <div class="fab fab-right-bottom">
+    <a href="#" class="fabInputMasterPricelist">
+      <i class="fa fa-plus"></i>
+    </a>
+  </div>
+
+  <div class="popup popup-pilih-file-excel" style="background-color:white" data-ajax="false">
+    <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+    <div class="searchbar-backdrop"></div>
+    <div class="block">
+      <div class="row">
+        <div class="col" style="font-size:1.3em;text-align: center">Pilih Format File</div>
+      </div>
+    </div>
+    <div class="list ">
+      <ul>
+        <li>
+          <label class="item-radio item-content">
+            <input type="radio" name="radio-pilih-file-excel" value="XLS" checked />
+            <i class="icon icon-radio"></i>
+            <div class="item-inner">
+              <div class="item-title">XLS</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-radio item-content">
+            <input type="radio" name="radio-pilih-file-excel" value="XLSX"/>
+            <i class="icon icon-radio"></i>
+            <div class="item-inner">
+              <div class="item-title">XLSX</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-radio item-content">
+            <input type="radio" name="radio-pilih-file-excel" value="CSV"/>
+            <i class="icon icon-radio"></i>
+            <div class="item-inner">
+              <div class="item-title">CSV</div>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+  <p class="row">
+    <button class="col button button-fill color-green" onClick="ExportPricelist()">Export</button>
+    <button class="col button button-fill color-red popup-close">Batal</button>
+  </p>
+</div>
+
+  </div>

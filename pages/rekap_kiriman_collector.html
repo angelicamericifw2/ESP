@@ -1,0 +1,157 @@
+<div class="page" data-name="rekap_kiriman_collector">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <!-- <a href="/home/" class="link "> -->
+                    <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title" id="titleRekapKirimanCollector">Rekap Kiriman</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="list form-store-data" >
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Dari Staff</b></div>
+                    <div class="item-input-wrap">  
+                        <a href="#" class="popup-open-karyawanPelangganDari">
+
+                            <input type="hidden" class="kodeDariSalesmanLaporan"  ">
+                            <input type="text" readonly="" class="namaDariSalesmanLaporan" placeholder="Nama">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>* Sampai Staff</b></div>
+                    <div class="item-input-wrap">  
+                        <a href="#" class="popup-open-karyawanPelangganSampai">
+
+                            <input type="hidden" class="kodeSampaiSalesmanLaporan"  ">
+                            <input type="text" readonly="" class="namaSampaiSalesmanLaporan" placeholder="Nama">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Dari Tanggal</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" placeholder="Select date" readonly="readonly" id="dariTanggalLaporanPerStaff"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Sampai Tanggal</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" placeholder="Select date" readonly="readonly" id="sampaiTanggalLaporanPerStaff"/>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+
+            
+
+
+        </div>
+
+        <div class="block">
+            <div class="row">
+                <button class="button button-fill" id="btnLihatRekap">Lihat Rekap</button>
+
+            </div>
+        </div>
+
+
+
+        <div class="popup popup-karyawanDari" style="background-color:white" data-ajax="false">
+            <form class="searchbar searchKaryawanDari">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search">
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+
+            </form>
+            <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+            <div class="searchbar-backdrop"></div>
+            <!-- hide-on-search element -->
+
+            <!-- search target list -->
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnCancel">Cancel</button>
+                </div>
+            </div>
+            <div class="list inset searchbar-found">
+                <ul class="listPopUpNamaKaryawanDari">
+                
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+
+
+    <div class="popup popup-karyawanSampai" style="background-color:white" data-ajax="false">
+            <form class="searchbar searchKaryawanSampai">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search">
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+
+            </form>
+            <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+            <div class="searchbar-backdrop"></div>
+            <!-- hide-on-search element -->
+
+            <!-- search target list -->
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnCancel">Cancel</button>
+                </div>
+            </div>
+            <div class="list inset searchbar-found">
+                <ul class="listPopUpNamaKaryawanSampai">
+                
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+

@@ -1,0 +1,77 @@
+<div class="page" data-name="edit_profile">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <!-- <a href="/detail_karyawan/" class="link"> -->
+                    <a href="#" class="link back">
+                        <i class="icon icon-back"></i>
+                        <span class="ios-only">Back</span>
+                    </a>
+                </div>
+                <div class="title">Edit Profile</div>
+            </div>
+        </div>
+        <div class="page-content">
+
+
+
+            <div class="list form-store-data" >
+
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3"><b>* Nama</b></div>
+                        <div class="item-input-wrap">
+                            <input type="text" placeholder="Nama" id="namaProfile">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3"><b>* Alamat</b></div>
+                        <div class="item-input-wrap">
+                            <input type="text" placeholder="Alamat" id="alamatProfile">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3"><b>* No HP</b></div>
+                        <div class="item-input-wrap">
+                            <input type="number" style="text-align: right;" placeholder="" id="noHpProfile">
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="card">
+                    <div class="card-header row" style="background-color:#2196F3;color:white">
+                        <a href="#" class="col padding5" onClick="ProfileKamera(this)">
+                            <i class="fa fa-camera  middleWhite"></i>
+                        </a>
+
+                        <a href="#" class="col padding5" onClick="ProfileGallery(this)">
+                            <i class="far fa-image  middleWhite"> </i>
+                        </a>
+                        <input type="hidden" id="counterFotoProfile" value="0">
+                    </div>
+                    <div class="card-content card-content-padding">
+                        <img src="" id="fotoProfile" height="150" width="100%">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="block">
+                <div class="row">
+                    <button class="col-50 button button-fill btnSimpanProfile" onClick="SimpanProfile()">Simpan</button>
+
+                    <button class="col-50 button button-fill back">Batal</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>

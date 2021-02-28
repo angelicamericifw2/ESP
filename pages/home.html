@@ -1,0 +1,445 @@
+<div class="page" data-name="home">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <!-- <div class="left">
+                <div class="left">
+                    <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <i class="icon f7-icons ios-only">menu</i>
+                        <i class="icon material-icons md-only">menu</i>
+                    </a>
+                </div> 
+            </div> -->
+            <div class="left ubahPasswordLink">
+                <a href="#" class="link masterUbahPassword">
+                    <i class="fas fa-user-md"></i>
+                </a>
+            </div>
+            <div class="title" id="homeTitle">Hi </div>
+<!-- 
+    <a class="link external" href="http://google.com">Open Google</a> -->
+
+    <div class="right">
+        <a href="#" class="link" onClick='BarcodeScanner()'>
+            <i class="fa fa-camera"></i>
+        </a>
+        <a href="#" class="link" onClick="PindahHalaman('/master_inbox/')">
+            <i class="icon icon-fill f7-icons">email_fill<span class="badge color-red" id="badge_inbox"></span></i>
+        </a>
+        <a href="#" class="link" onClick="logOutUser()">
+            <i class="fas fa-sign-out-alt"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+    <div class="toolbar-inner">
+      <a href="#tab-home" class="tab-link tab-link-active">
+        <img width="30" src="http://indotyre.co.id/bond/gambar_icon/menu_home.png">
+        <span class="tabbar-label">Home</span>
+    </a>
+    <a href="#tab-menu" class="tab-link">
+         <img width="30" src="http://indotyre.co.id/bond/gambar_icon/menu_master.png">
+        <span class="tabbar-label">Menu</span>
+    </a>
+    <a href="#tab-account" class="tab-link">
+         <img width="35" src="http://indotyre.co.id/bond/gambar_icon/menu_account.png">
+        <span class="tabbar-label">Account</span>
+    </a>
+</div>
+</div>
+<div class="tabs">
+    <div id="tab-home" class="page-content tab tab-active">
+        <!-- <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div> -->
+
+
+        <div class="row " style="font-size:1.5em;text-align: center" >
+            <div class="col-100">
+                Easy Sale Pro
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card col-90 desktop-70 tablet-60 align-self-center" style="margin:0 auto">
+              <div class="card-content card-content-padding text-align-center" id="homeWelcome" >
+
+
+              </div>
+          </div>
+      </div>
+      <br>
+
+      <!-- <div class="container" id="containerKategoriPelanggan">
+      <div class="row">
+
+          <div class="col-33 " id="rcorners2">
+            <div class="row justify-content-center" > 
+              643
+            </div>
+            <div class="row justify-content-center text-align-center">
+              <h3 class="text-center">Company Profile</h3>
+            </div>
+            </div>
+
+      </div>
+  </div> -->
+
+
+      <div id="containerChart" style="height: 400px"></div>
+
+      <div id="containerChartPointKunjungan" style="height: 400px"></div>
+
+      <div class="block block-strong" id="blockRencanaKunjungan">
+          <p style="font-size:1.2em">Rencana Kunjungan</p>
+      </div>
+      <div class="row" id="homeRencanaKunjungan">
+          <!-- <div class="card demo-card-header-pic col-50 desktop-25 tablet-33 marginCard">
+            <div style="background-image:url(http://192.168.1.8:280/kerja/kerja/www/img/no_pict.jpg)" class="card-header align-items-flex-end"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">Posted on January 21, 2015</p>
+                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
+        </div>
+
+        <div class="card demo-card-header-pic col-50 desktop-25 tablet-33 marginCard" >
+            <div style="background-image:url(http://192.168.1.8:280/kerja/kerja/www/img/no_pict.jpg)" class="card-header align-items-flex-end"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">Posted on January 21, 2015</p>
+                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
+        </div>
+
+        <div class="card demo-card-header-pic col-50 desktop-25 tablet-33 marginCard" >
+            <div style="background-image:url(http://192.168.1.8:280/kerja/kerja/www/img/no_pict.jpg)" class="card-header align-items-flex-end"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">Posted on January 21, 2015</p>
+                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
+        </div>
+
+        <div class="card demo-card-header-pic col-50 desktop-25 tablet-33 marginCard" >
+            <div style="background-image:url(http://192.168.1.8:280/kerja/kerja/www/img/no_pict.jpg)" class="card-header align-items-flex-end"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">Posted on January 21, 2015</p>
+                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
+        </div> -->
+    </div>
+
+    <div class="block block-strong" id="blockKunjungan">
+      <p style="font-size:1.2em">Kunjungan</p>
+  </div>
+  <div class="row " id="homeKunjungan">
+          <!-- <div class="card demo-card-header-pic col-50 desktop-25 tablet-33 marginCard" >
+            <div style="background-image:url(http://192.168.1.8:280/kerja/kerja/www/img/no_pict.jpg)" class="card-header align-items-flex-end"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">Posted on January 21, 2015</p>
+                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
+        </div>
+
+        <div class="card demo-card-header-pic col-50 desktop-25 tablet-33 marginCard" >
+            <div style="background-image:url(http://192.168.1.8:280/kerja/kerja/www/img/no_pict.jpg)" class="card-header align-items-flex-end"></div>
+              <div class="card-content card-content-padding">
+                <p class="date">Posted on January 21, 2015</p>
+                <p>Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="#" class="link">Read more</a></div>
+        </div> -->
+
+    </div>
+
+    <!-- <div class="list" id="homeListKunjungan">
+
+        <div class="list-group homeGroupRencanaKujungan">
+            <ul>
+                <li class="list-group-title" style="font-weight: bold">
+                </li>
+            </ul>
+        </div>
+
+        <div class="list-group homeGroupKunjungan">
+            <ul>
+                <li class="list-group-title " style="font-weight: bold">
+                </li>
+            </ul>
+        </div>
+
+    </div> -->
+
+    <!-- <div class="card">
+        <div class="card-content">
+            <div class="list cardMaster">
+                <ul>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div> -->
+</div>
+
+
+<div id="tab-menu" class="page-content tab">
+    <div class="card">
+        <div class="card-content">
+            <div class="list cardMaster">
+                <ul>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="tab-account" class="page-content tab">
+    <!-- <div class="item-content userprofile">
+        <div class="item-media"><img src="http:192.168.1.2:280/kerja/gambar_karyawan/SUMBER-karyawan.jpg" width="44" alt=""/></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">Sumber</div>
+        </div>
+        <div class="item-subtitle">08213231315</div>
+    </div>
+</div> -->
+
+<div class="list">
+  <ul>
+    <li>
+        <a href="#" class="item-link item-content" onClick="PindahHalaman('/edit_profile/')">
+            <div class="item-inner">
+                <div class="item-title"><img width="44" src="img/gambar_account/edit_profile.png"> Edit Profile</div>
+            </div>
+        </a>
+    </li>
+
+    <li>
+        <a href="/ubah_password/" class="item-link item-content">
+            <div class="item-inner">
+                <div class="item-title"><img width="44" src="img/gambar_account/change_password.png"> Change Password</div>
+            </div>
+        </a>
+    </li>
+
+    <!-- <li>
+        <a href="#" class="item-link item-content">
+            <div class="item-inner">
+                <div class="item-title"><i class="fas fa-hammer" style="color:#e2552b"></i> Absensi (Cooming Soon)</div>
+            </div>
+        </a>
+    </li> -->
+
+    <li>
+        <a href="#" class="item-link item-content">
+            <div class="item-inner">
+                <div class="item-title"><img width="44" src="img/gambar_account/pelanggan_prioritas.png"> Pelanggan Prioritas (Cooming Soon)</div>
+            </div>
+        </a>
+    </li>
+
+    <li>
+        <a href="#" class="item-link item-content">
+            <div class="item-inner">
+                <div class="item-title"><img width="44" src="img/gambar_account/chat.png"> Chat (Cooming Soon)</div>
+            </div>
+        </a>
+    </li>
+
+    <li>
+        <a href="#" class="item-link item-content">
+            <div class="item-inner">
+                <div class="item-title"><img width="44" src="img/gambar_account/informasi.png"> Informasi (Cooming Soon)</div>
+            </div>
+        </a>
+    </li>
+
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="page-content">
+
+    <div class="row " style="font-size:1.5em;text-align: center" >
+        <div class="col-100">
+            Easy Sale Pro 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-100 desktop-70 tablet-60 align-self-center" style="margin:0 auto">
+          <div class="card-content card-content-padding text-align-center" id="homeWelcome" >
+
+
+          </div>
+      </div>
+  </div>
+
+  <div class="list" id="homeListKunjungan">
+
+    <div class="list-group homeGroupRencanaKujungan">
+        <ul>
+            <li class="list-group-title" style="font-weight: bold">
+            </li>
+        </ul>
+    </div>
+
+            <!-- <div class="list-group homeGroupKiriman">
+            <ul>
+            <li class="list-group-title ">
+            Rencana Kiriman
+            </li>
+            </ul>
+            </div>
+
+            <div class="list-group homeGroupCollector">
+            <ul>
+            <li class="list-group-title ">
+            Rencana Collector
+            </li>
+            </ul>
+        </div> -->
+
+        <div class="list-group homeGroupKunjungan">
+            <ul>
+                <li class="list-group-title " style="font-weight: bold">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 
+        <a href="/halaman_coba_coba/" >asdasd</a> -->
+        <!-- <a class="link external" href="tel:+082141480987">082141480987</a>
+            <a class="link external" href="https://www.google.com/maps/dir/?api=1&origin=-7.152171,111.882701&destination=-7.274665,112.798505">GOOGLE MAPS EXTERNAL</a> -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="list cardMaster">
+                        <ul>
+                        <!-- <li>
+                            <a href="#" class="item-link item-content petaGps">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-map-marker-alt"></i>   Peta GPS</div>
+                                </div>
+                            </a>
+                        </li> -->
+
+
+
+                        <!-- <li>
+                            <a href="#" class="item-link item-content masterJabatan">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-user-md fontAwesomeBiru"></i>  Master Jabatan</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterKaryawan">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-address-book fontAwesomeBiru"></i>  Master Karyawan</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterKategori">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-closed-captioning fontAwesomeBiru"></i>  Master Kategori Pelanggan</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterPelanggan">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-id-card fontAwesomeBiru"></i>  Master Pelanggan</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterMenu">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-user-md fontAwesomeBiru"></i>  Master Menu</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterHakAkses">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-user-md fontAwesomeBiru"></i>  Master Hak Akses</div>
+                                </div>
+                            </a>
+                        </li> -->
+
+                        
+
+                        
+<!-- 
+                        <li>
+                            <a href="#" class="item-link item-content masterJenisPelanggan">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-truck fontAwesomeBiru"></i>  Master Jenis Pelanggan</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterDetailPajak">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-dollar-sign fontAwesomeBiru"></i>  Master Detail Pajak</div>
+                                </div>
+                            </a>
+                        </li> -->
+
+                       <!--  <li>
+                            <a href="#" class="item-link item-content masterRencanaKunjungan">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-paperclip fontAwesomeBiru"></i>  Master Rencana Kunjungan</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="item-link item-content masterKunjungan">
+                                <div class="item-inner">
+                                    <div class="item-title boldHitam"><i class="fas fa-paper-plane fontAwesomeBiru"></i>  Master Kunjungan</div>
+                                </div>
+                            </a>
+                        </li> -->
+
+
+                        <!-- 
+                        <li>
+                            <a href="#" class="item-link item-content masterBarang">
+                                <div class="item-inner">
+                                    <div class="item-title">Master Barang</div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                    -->
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+

@@ -1,0 +1,168 @@
+<div class="page" data-name="input_pengeluaran">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title">Input Pengeluaran</div>
+        </div>
+    </div>
+    <div class="page-content">
+
+        <div class="list form-store-data" >
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Jenis Pengeluaran</b></div>
+                    <div class="item-input-wrap">
+                        <Select class="jenis_pengeluaran">
+                        </Select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Tanggal Pengeluaran</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" placeholder="Select date" readonly="readonly" id="kalender-tanggal-pengeluaran"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Nomor Plat Unit</b></div>
+                    <div class="item-input-wrap">  
+                        <a href="#" class="popup-open-unit">
+
+                            <input type="hidden" class="value_nomor_plat_unit">
+                            <input type="text" readonly="" class="text_nomor_plat_unit" placeholder="Nomor Plat" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header row" style="background-color:#2196F3;color:white">
+                    <a href="#" onClick="ambilFotoGlobal('1','tidak','foto-plat-1')" class="ambilFoto col padding5">
+                        <i class="fa fa-camera  middleWhite"> Nomor Plat</i>
+                    </a>
+                </div>
+                <div class="card-content card-content-padding">
+                    <img id="foto-plat-1" name="fotoUpload" class="1" height="150" width="100%" >
+                </div>
+            </div>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Odometer</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" id="input_odometer" class ="odometer" placeholder="Odometer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header row" style="background-color:#2196F3;color:white">
+                    <a href="#" onClick="ambilFotoGlobal('1','tidak','foto-odometer-1')" class="ambilFoto col padding5">
+                        <i class="fa fa-camera  middleWhite"> Odometer</i>
+                    </a>
+                </div>
+                <div class="card-content card-content-padding">
+                    <img  id="foto-odometer-1" name="fotoUpload" class="1" height="150" width="100%" >
+                </div>
+            </div>
+
+            <div class="block-header">Nota Pengeluaran</div>
+            <span class="foto-nota-pengeluaran">
+                <div class="card">
+                    <div class="card-header row" style="background-color:#2196F3;color:white">
+                        <a href="#" onClick="ambilFotoGlobal('1','.foto-nota-pengeluaran','foto-nota-1')" class="ambilFoto col padding5">
+                            <i class="fa fa-camera  middleWhite"> Nota</i>
+                        </a>
+                    </div>
+                    <div class="card-content card-content-padding">
+                        <img id="foto-nota-1" name="foto-biaya-pengeluaran" class="1" height="150" width="100%" >
+                    </div>
+                </div>
+            </span>
+
+            <div class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Total Pengeluaran</b></div>
+                    <div class="item-input-wrap">
+                        <input type="text" id="input_total_pengeluaran" class ="total_pengeluaran" placeholder="Total Pengeluaran">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pengeluaran_bahan_bakar">
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3"><b>Lokasi SPBU</b></div>
+                        <div class="item-input-wrap">
+                            <input type="text" class ="lokasi_spbu" placeholder="SPBU 31">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-content item-input">
+                    <div class="item-inner">
+                        <div class="item-title item-label" style="color:#2196F3"><b>Jumlah Liter</b></div>
+                        <div class="item-input-wrap">
+                            <input type="number" class ="jumlah_liter" placeholder="Jumlah Liter">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+
+        </div>
+
+        <div class="block">
+            <div class="row">
+                <button class="col-50 button button-fill" onClick="SimpanPengeluaran()">Simpan</button>
+
+                <button class="col-50 button button-fill" onClick="batalHalaman()">Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-unit" style="background-color:white" data-ajax="false">
+        <form class="searchbar search-unit">
+            <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="Search">
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+            </div>
+
+        </form>
+        <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+        <div class="searchbar-backdrop"></div>
+        <div class="block">
+            <div class="row">
+                <button class="col button button-fill" onClick="ClosePopup()">Cancel</button>
+            </div>
+        </div>
+        <div class="list inset searchbar-found">
+            <ul class="list-unit">
+
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,325 @@
+<div class="page" data-name="edit_hak_akses">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">Hak Akses</div>
+
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+    <div class="dataJabatanHakAkses">
+      <div class="card">
+        <div class ="card-header cardHeaderBiru">Data Jabatan</div>
+        <div class="card-content card-content-padding">
+
+
+          <div class="row">
+            <div class="col-45 cardContentDetail" >Jabatan</div>
+            <div class="col-5 boldHitam"> : </div>
+            <div class="col-50 cardContentHasilDetail kodeJabatanHakAkses">asd</div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-45 cardContentDetail" >User ID</div>
+            <div class="col-5 boldHitam"> : </div>
+            <div class="col-50 cardContentHasilDetail userIdHakAkses">asd</div>
+          </div>
+
+          <div class="row">
+            <div class="col-45 cardContentDetail" >Cabang</div>
+            <div class="col-5 boldHitam"> : </div>
+            <div class="col-50 cardContentHasilDetail cabangHakAkses"></div>
+          </div>
+
+
+        </div>
+      </div> 
+    </div>
+
+    <div class="dataUserBaruHakAkses">
+      <div class=" list media-list searchbar-found">
+        <ul>
+
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label" style="color:#2196F3"><b>User ID</b></div>
+                <div class="item-input-wrap">
+                  <a href="#" class="popup-open-kodeKaryawan">
+                    <input type="text" class="userIdHakAkses" placeholder="User ID" readonly="readonly"/>
+                    <input type="hidden" class=""/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label" style="color:gray"><b>Nama</b></div>
+                <div class="item-input-wrap">
+                  <input type="text" class="namaHakAkses" placeholder="-" readonly="" />
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label" style="color:#2196F3"><b>Password</b></div>
+                <div class="item-input-wrap">
+                  <input type="password" class="passwordHakAkses" placeholder="Password"/>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label" style="color:#2196F3"><b>Verifikasi Password</b></div>
+                <div class="item-input-wrap">
+                  <input type="password" class="verifikasiPasswordHakAkses" placeholder="Verifikasi Password"/>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label" style="color:#2196F3"><b>Jabatan</b></div>
+                <div class="item-input-wrap">
+                  <a href="#" class="popup-open-kodeJabatan">
+                    <input type="text" class="namaJabatanHakAkses" placeholder="" readonly="readonly"/>
+                    <input type="hidden" class="kodeJabatanHakAkses"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="generateTambahHakAkses">
+      <div class="card">
+        <div class ="card-header cardHeaderBiru">Hak Akses
+
+          <a href="#" class="hapusHakAksesUserMenu"><span style="font-size:0.9em;text-align: right"><i class="fas fa-window-close " style="color:white"></i></span></a>
+        </div>
+        <div class="card-content card-content-padding">
+          <div class="list media-list searchbar-found semuaHakAksesJabatan">
+            <ul>
+
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label" style="color:#2196F3"><b>Menu</b></div>
+                    <div class="item-input-wrap">
+                      <a href="#" class="popup-open-usermenu" id="1">
+                        <input type="text" class="namaMenuUserMenu1" placeholder="Tekan Untuk Menambah Menu" readonly="readonly"/>
+                        <input type="hidden" class="screenMenuUserMenu1" name="screenMenuUserMenu[]" value=""/>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="usermenu_tambah[]"  />
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">Tambah</div>
+                  </div>
+                </label>
+              </li>
+              
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="usermenu_ubah[]" />
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">Ubah</div>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="usermenu_hapus[]" />
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">Hapus</div>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="usermenu_cetak[]"  />
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">Cetak</div>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="usermenu_posting[]"  />
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">Posting</div>
+                  </div>
+                </label>
+              </li>
+
+              <li>
+                <label class="item-checkbox item-content">
+                  <input type="checkbox" name="usermenu_cari[]"  />
+                  <i class="icon icon-checkbox"></i>
+                  <div class="item-inner">
+                    <div class="item-title">Cari</div>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-5"></div>
+      <div class="col-23" style="font-size:0.8em;color:#2196F3">Tambah Hak Akses</div>
+      <div class="col-50"><hr></div>
+      <div class="col-25">
+        <span><button class="button button-outline button-round btnTambahHakAkses" style="color:white;background-color:#2196F3;height:25px;">
+          <i class="fa fa-plus"></i>
+        </button></span>
+
+      </div>
+    </div> 
+
+
+    <div class="block">
+      <div class="row">
+        <button class="col-50 button button-fill btnSimpanEditHakAkses">Simpan</button>
+
+        <button class="col-50 button button-fill btnBatalEditHakAkses" onClick="BackBatal()">Batal</button>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="popup popup-usermenu" style="background-color:white" data-ajax="false">
+
+    <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+    <div class="searchbar-backdrop"></div>
+    <!-- hide-on-search element -->
+
+    <!-- search target list -->
+    <div class="block">
+      <div class="row">
+        <button class="col button button-fill btnCancel">Cancel</button>
+      </div>
+    </div>
+    <div class="list inset searchbar-found">
+      <ul class="listPopupNamaMenuUserMenu">
+        
+      </ul>
+    </div>
+    <!-- Nothing found message -->
+    <div class="block searchbar-not-found">
+      <div class="block-inner">Nothing found</div>
+    </div>
+  </div>
+
+  <div class="popup popup-jabatan" style="background-color:white" data-ajax="false">
+        <form class="searchbar">
+            <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="Search">
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+            </div>
+
+        </form>
+        <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+        <div class="searchbar-backdrop"></div>
+        <!-- hide-on-search element -->
+
+        <!-- search target list -->
+        <div class="block">
+            <div class="row">
+                <button class="col button button-fill btnCancel">Cancel</button>
+            </div>
+        </div>
+        <div class="list inset searchbar-found">
+            <ul class="listPopupKodeJabatan">
+                
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+
+
+    <div class="popup popup-kodeKaryawan" style="background-color:white" data-ajax="false">
+        <form class="searchbar">
+            <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="Search">
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+            </div>
+
+        </form>
+        <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+        <div class="searchbar-backdrop"></div>
+        <!-- hide-on-search element -->
+
+        <!-- search target list -->
+        <div class="block">
+            <div class="row">
+                <button class="col button button-fill btnCancelPopUpKodeKaryawan">Cancel</button>
+            </div>
+        </div>
+        <div class="list inset searchbar-found">
+            <ul class="listPopupKodeKaryawan">
+                
+            </ul>
+        </div>
+        <!-- Nothing found message -->
+        <div class="block searchbar-not-found">
+            <div class="block-inner">Nothing found</div>
+        </div>
+    </div>
+
+</div>

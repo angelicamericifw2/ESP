@@ -1,0 +1,174 @@
+<div class="page" data-name="input_detail_pemasangan_ban" >
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title titleDetailPemasanganBan">Input Pemasangan Ban</div>
+        </div>
+    </div>
+    <div class="page-content detailPemasanganBan">
+        
+        <div class="list form-store-data" >
+
+        <input type="hidden" class="inputAtauEdit"/>
+        <input type="hidden" class="idTdPemasanganBan"/>
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Kode Barang</div>
+        <div class="item-input-wrap">
+        <a href="#" class="popup-open-barang">
+        <input type="text" class="namaBarang" placeholder="" readonly="readonly"/>
+        <input type="hidden" name="kodeBarangPemasanganBan" class="valueBarang"/>
+        </a>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Serial Number</div>
+        <div class="item-input-wrap">
+        <input type="text" placeholder="Serial Number" class="serialNumberPemasanganBan" maxlength="30" />
+        </div>
+        </div>
+        </div>
+
+
+        
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Tekanan Angin</div>
+        <div class="item-input-wrap">
+        <input type="number" placeholder="Posisi" class="tekananAnginPemasanganBan" maxlength="5" />
+        </div>
+        </div>
+        </div>
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Tebal Kembangan 1</div>
+        <div class="item-input-wrap">
+        <input type="number" placeholder="Tebal Kembangan" class="tebalKembanganPemasanganBan" />
+        </div>
+        </div>
+        </div>
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Tebal Kembangan 2</div>
+        <div class="item-input-wrap">
+        <input type="number" placeholder="Tebal Kembangan" class="tebalKembanganPemasanganBan2" />
+        </div>
+        </div>
+        </div>
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Tebal Kembangan 3</div>
+        <div class="item-input-wrap">
+        <input type="number" placeholder="Tebal Kembangan" class="tebalKembanganPemasanganBan3" />
+        </div>
+        </div>
+        </div>
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Tebal Kembangan 4</div>
+        <div class="item-input-wrap">
+        <input type="number" placeholder="Tebal Kembangan" class="tebalKembanganPemasanganBan4" />
+        </div>
+        </div>
+        </div>
+
+        <!-- <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Harga</div>
+        <div class="item-input-wrap">
+        <input type="number" placeholder="Harga" class="hargaPemasanganBan" />
+        </div>
+        </div>
+        </div> -->
+        <input type="hidden" = class="hargaPemasanganBan" />
+
+        <div class="item-content item-input">
+        <div class="item-inner">
+        <div class="item-title item-label" style="color:#2196F3;font-weight: bold">Keterangan</div>
+        <div class="item-input-wrap">
+        <!-- <input type="text" placeholder="Keterangan" class="keteranganPemasanganBan" /> -->
+        <textarea class="resizeable keteranganPemasanganBan" placeholder="Keterangan" ></textarea>
+        </div>
+        </div>
+        </div>
+
+        
+        </div>
+
+        <span class="fotoTersimpan">
+            
+        </span>
+
+        <span class="spanFotoKunjungan">
+                <div class="card">
+                    <div class="card-header row" style="background-color:#2196F3;color:white">
+                        
+                            <a href="#" onClick="ambilFotoKunjungan('1')" class="ambilFotoKunjungan col padding5">
+                                <i class="fa fa-camera  middleWhite"> </i>
+                            </a>
+                        
+
+                            <a href="#" onClick="ambilFotoGallery('1')" class="ambilFotoGallery col padding5">
+                                <i class="far fa-image  middleWhite"> </i>
+                            </a>
+                    </div>
+                    <div class="card-content card-content-padding">
+                        <img  id="foto-kunjungan-1" name="fotoKunjunganUpload" class="1" height="150" width="100%">
+                    </div>
+                </div>
+            </span>
+
+
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnInputDetailPemasanganBan">Input </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup popup-barang" style="background-color:white" data-ajax="false">
+            <form class="searchbar">
+                <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                        <input type="search" placeholder="Search">
+                        <i class="searchbar-icon"></i>
+                        <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancel</span>
+                </div>
+
+            </form>
+            <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+            <div class="searchbar-backdrop"></div>
+            <div class="block">
+                <div class="row">
+                    <button class="col button button-fill btnCancel">Cancel</button>
+                </div>
+            </div>
+            <div class="list inset searchbar-found">
+                <ul class="listPopupBarang">
+
+                </ul>
+            </div>
+            <div class="block searchbar-not-found">
+                <div class="block-inner">Nothing found</div>
+            </div>
+        </div>
+
+    </div>

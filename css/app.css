@@ -1,0 +1,108 @@
+.paddingz{padding-left:0px;}
+.buttonbar{ position: fixed; bottom: 0; width: 100%; left: 0; z-index: 1}
+.item-text {color:black}
+.cardHeaderBiru {background-color: #2196F3;font-weight: bold;color:white;}
+.cardHeaderHijau {background-color: green;font-weight: bold;color:white;}
+.cardHeaderMerah {background-color: red;font-weight: bold;color:white;}
+.cardHeaderOrange {background-color: #F4511E;font-weight: bold;color: white;}
+.cardContentDetail {color:#2196F3;font-weight: bold;}
+.boldHitam {font-weight: bold;}
+.cardContentHasilDetail {font-weight: bold;font-size:0.9em;}
+.center {text-align: center}
+.judulForm {font-weight: bold}
+.cardHeader {color:white;background-color: #2196F3;font-weight: bold}
+.middleWhite {color:white;text-align: center}
+.padding5 {padding-top: 5px;text-align: center;}
+html *{font-family: 'Mina', sans-serif;}
+.fontAwesomeBiru {color:blue;}
+.item-input-wrap {text-transform:uppercase;}
+.popup {height:100%;overflow:auto;}
+.boldPutih {font-weight: bold;color:white;}
+.bold {font-weight: bold}
+.inboxBackground {background-color:rgba(242,245,245,0.8) !important;}
+.wrap {
+    width: auto;
+    height:auto;/*
+    margin: auto;*/
+    text-align:center;
+    position:relative;
+}
+.text_over_image {
+    position: absolute;
+ margin: auto;
+    top: 50%;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+   height:auto;
+}
+
+.demo-card-header-pic .card-header {
+  height: 30vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.demo-card-header-pic .card-content-padding .date{
+  color: #8e8e93;
+}
+
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 350px;
+  width:100%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+.marginCard {
+  margin:0 !important;
+  margin-top:10px !important;
+  margin-bottom:10px !important;
+  margin-left:5px !important;
+  margin-right:5px !important;
+}
+
+
+.userprofile{ background: url(../img/proflebg.png) no-repeat #5c6693; background-size: 100%;  padding:50px 0 20px 0; height: 50px; display: flex; direction: ltr; flex-flow: row}
+.userprofile .item-inner{  width: 80%; float: left; color: #ffffff}
+.userprofile .item-inner .item-subtitle{color: rgba(255, 255, 255, 0.5)}
+.userprofile .item-media{width:20%; max-width: 56px; float: left; padding:0 15px;}
+.userprofile .item-media img{ width: 100%; border-radius:50%;}
+
+.rcorners {
+  border-radius: 25px; 
+  border: 2px solid #73AD21;
+  margin-bottom:10px;
+}
+
+.offscreen {
+    position: absolute;
+    left: -999em;
+}
+
+

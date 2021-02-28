@@ -1,0 +1,90 @@
+<div class="page" data-name="hasil_laporan_rencana_kunjungan">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">Hasil Rekap</div>
+      <!-- <div class="right" onClick="ExportRencanaKunjungan()">
+        <a class="link">
+          Export
+        </a>
+      </div> -->
+      <div class="right" id="tombol-export">
+          <a class="link dynamic-popup" href="#" onClick="OpenPopUp('popup-pilih-file-excel')">
+            Export
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="page-content" id="pageHasilRekapRencanaKunjungan">
+
+    <!-- <div class="row">
+      <div class="card card-outline col-100 tablet-33 desktop-25">
+        <div class="card-header">Card header</div>
+        <div class="card-content card-content-padding">
+          <div class="list links-list">
+            <ul>
+              <li class="item-divider bold">Ari<span class="float-right" style="color:red">23</span></li>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+
+              <li class="item-divider bold">Sumber<span class="float-right" style="color:red">42</span></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+  <div class="popup popup-pilih-file-excel" style="background-color:white" data-ajax="false">
+    <div class="judul" style="font-size:1.3em;text-align: center"></div>
+
+    <div class="searchbar-backdrop"></div>
+    <div class="block">
+      <div class="row">
+        <div class="col" style="font-size:1.3em;text-align: center">Pilih Format File</div>
+      </div>
+    </div>
+    <div class="list ">
+      <ul>
+        <li>
+          <label class="item-radio item-content">
+            <input type="radio" name="radio-pilih-file-excel" value="XLS" checked />
+            <i class="icon icon-radio"></i>
+            <div class="item-inner">
+              <div class="item-title">XLS</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-radio item-content">
+            <input type="radio" name="radio-pilih-file-excel" value="XLSX"/>
+            <i class="icon icon-radio"></i>
+            <div class="item-inner">
+              <div class="item-title">XLSX</div>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+  <p class="row">
+    <button class="col button button-fill color-green" onClick="ExportRencanaKunjungan()">Export</button>
+    <button class="col button button-fill color-red popup-close">Batal</button>
+  </p>
+</div>
+
+  </div>
+</div>
+
+
