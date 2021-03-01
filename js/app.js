@@ -1,4 +1,4 @@
-E/*
+/*
 indotyre = 1.0.0 (cordovaz)
 trial1 = 1.0,1 (io.cordova.trial1)
 trial2 = 1.0.1 (io.cordova.trial2)
@@ -141,7 +141,7 @@ var ipGambarAbsensi = `http://`+ip+`/gambar_absensi/`;
 var ipGambarPengeluaran = `http://`+ip+`/gambar_pengeluaran/`;*/
 
 
-var ip = "indotyre.co.id/internal";
+var ip = "esp.indotyre.co.id";
 var ipGambar = `https://`+ip+`/bond/gambar_karyawan/`;
 var ipIconGambar = "http://"+ip+"/bond/gambar_icon/";
 var ipTujuan = `https://`+ip+`/bond/bond_online.php`;
